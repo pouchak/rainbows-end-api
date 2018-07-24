@@ -5,9 +5,9 @@ const bodyParser = require('body-parser');
 const app = express();
 var mongoose = require('mongoose');
 mongoose.connect(config.mongo.url, {useNewUrlParser:true});
-const userController = require('./user.js')
-const avatarController = require('./avatar.js')
-const loginController = require('./login.js')
+const userController = require('./controllers/user.js')
+const avatarController = require('./controllers/avatar.js')
+const loginController = require('./controllers/login.js')
 
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));
