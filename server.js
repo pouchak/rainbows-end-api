@@ -77,6 +77,7 @@ app.route('/avatar/:id')
 })*/
 
 //listen
+/** This is a description of the server listen function. */
 app.listen(config.server.port, ()=>{
     console.log(`listening on ${config.server.port}`)
 })
