@@ -4,11 +4,13 @@
     "description": "code tests",
     "main": "server.js",
     "scripts": {
-        "test": "mocha test.js"
+        "test": "mocha ./test/ --exit"
     },
     "dependencies": {
         "assert": "^1.4.1",
         "bcrypt": "^3.0.0",
+        "chai": "^4.1.2",
+        "chai-http": "^4.0.0",
         "express": "^4.16.3",
         "jsdoc": "^3.5.5",
         "mocha": "^5.1.1",

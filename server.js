@@ -13,6 +13,10 @@ const loginController = require('./controllers/login.js')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.route('/health')
+    .get((req, res)=>{
+        res.sendStatus(200)
+    })
 /*
 app.post('/login',(req, res)=>{
     let plaintext = {
@@ -81,3 +85,5 @@ app.route('/avatar/:id')
 app.listen(config.server.port, ()=>{
     console.log(`listening on ${config.server.port}`)
 })
+
+module.exports = app;
